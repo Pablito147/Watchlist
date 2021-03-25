@@ -42,7 +42,7 @@ function App() {
   }
   return (
     <div className='container'>
-      <Header showInputs={showInputs} title='Cinema tracker' buttonTogle={() => setShowInputs(!showInputs)}></Header>
+      <Header showInputs={showInputs} title='Add movie to watch list' buttonTogle={() => setShowInputs(!showInputs)}></Header>
       { showInputs && <AddTask onAdd={addTask}></AddTask>}
       {tasks.length > 0 ?
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}></Tasks>
